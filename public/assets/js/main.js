@@ -86,8 +86,8 @@
             nav: true,
             rtl: true,
             navText: [
-                '<i class="bi bi-chevron-left"></i>',
                 '<i class="bi bi-chevron-right"></i>',
+                '<i class="bi bi-chevron-left"></i>',
             ],
         });
 

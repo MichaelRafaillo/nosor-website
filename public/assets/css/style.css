@@ -43,12 +43,16 @@ html {
 #spinner {
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.5s ease-out, visibility 0s linear 0.5s;
+    transition:
+        opacity 0.5s ease-out,
+        visibility 0s linear 0.5s;
     z-index: 99999;
 }
 
 #spinner.show {
-    transition: opacity 0.5s ease-out, visibility 0s linear 0s;
+    transition:
+        opacity 0.5s ease-out,
+        visibility 0s linear 0s;
     visibility: visible;
     opacity: 1;
 }
@@ -213,8 +217,9 @@ html {
 }
 
 .page-header {
-    background: linear-gradient(rgba(24, 29, 56, 0.7), rgba(24, 29, 56, 0.7)),
-        url(../img/carousel-1.jpg);
+    background:
+        linear-gradient(rgba(24, 29, 56, 0.7), rgba(24, 29, 56, 0.7)),
+        url(../img/contact-us-cover.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -409,17 +414,17 @@ html {
     display: block;
     margin-bottom: 5px;
     padding: 0;
-    text-align: left;
     color: #ffffff;
     font-size: 15px;
     font-weight: normal;
     text-transform: capitalize;
     transition: 0.3s;
+    text-align: start;
 }
 
-.footer .btn.btn-link::before {
+.footer .btn.btn-link::after {
     position: relative;
-    content: "\f105";
+    content: "\f104";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     margin-right: 10px;

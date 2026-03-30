@@ -60,6 +60,10 @@ Route::get('/about', function () {
     return view('about');
 })->name('about');
 
+// Contact Routes
+Route::get('/contact', [\App\Http\Controllers\ContactController::class, 'show'])->name('contact.show');
+Route::post('/contact', [\App\Http\Controllers\ContactController::class, 'store'])->name('contact.store');
+
 // Schools Routes
 Route::get('/schools', [\App\Http\Controllers\SchoolController::class, 'index'])->name('schools.index');
 Route::get('/schools/{id}', [\App\Http\Controllers\SchoolController::class, 'show'])->name('schools.show');
@@ -91,5 +95,6 @@ Route::prefix('admin')->name('admin.')->middleware('auth')->group(function () {
     Route::resource('schools', \App\Http\Controllers\Admin\SchoolController::class)->only(['index', 'create', 'store', 'show', 'edit', 'update', 'destroy']);
     Route::resource('camps', \App\Http\Controllers\Admin\CampController::class)->only(['index', 'create', 'store', 'show', 'edit', 'update', 'destroy']);
     Route::resource('courses', \App\Http\Controllers\Admin\CourseController::class)->only(['index', 'create', 'store', 'show', 'edit', 'update', 'destroy']);
+    Route::resource('contact-messages', \App\Http\Controllers\Admin\ContactMessageController::class)->only(['index', 'show', 'destroy']);
     Route::resource('users', \App\Http\Controllers\Admin\UserController::class)->only(['index', 'create', 'store']);
 });

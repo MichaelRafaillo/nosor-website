@@ -150,7 +150,6 @@
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                 <h6 class="section-title bg-white text-center text-primary px-3">الخدمات</h6>
                 <h1 class="mb-5">خدمات فريق نسور</h1>
-                <p class="mb-5 text-muted">سيتم تطوير هذه الصفحة بمجرد إضافة محتوى وصور الخدمات</p>
             </div>
             <div class="row g-4">
                 <!-- Training Service -->

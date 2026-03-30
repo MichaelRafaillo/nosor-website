@@ -16,7 +16,7 @@
             <a href="{{ route('home') }}" class="nav-item nav-link {{ request()->routeIs('home') ? 'active' : '' }}">الرئيسية</a>
             <a href="{{ route('about') }}" class="nav-item nav-link {{ request()->routeIs('about') ? 'active' : '' }}">من نحن</a>
             <a href="{{ route('calendar.index') }}" class="nav-item nav-link {{ request()->routeIs('calendar.*') ? 'active' : '' }}">التقويم</a>
-            <a href="#" class="nav-item nav-link">الدورات</a>
+            <a href="{{ route('courses.index') }}" class="nav-item nav-link {{ request()->routeIs('courses.*') ? 'active' : '' }}">الكورسات</a>
             <div class="nav-item dropdown">
                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">الأركان الأربعة</a>
                 <div class="dropdown-menu fade-down m-0">
@@ -26,9 +26,9 @@
                     <a href="{{ route('courses.index') }}" class="dropdown-item">الكورسات</a>
                 </div>
             </div>
-            <a href="#" class="nav-item nav-link">اتصل بنا</a>
+            <a href="{{ route('contact.show') }}" class="nav-item nav-link {{ request()->routeIs('contact.*') ? 'active' : '' }}">اتصل بنا</a>
         </div>
-        <a href="#" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">انضم الآن<i class="fa fa-arrow-left ms-3"></i></a>
+        <a href="{{ route('contact.show') }}" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">انضم الآن<i class="fa fa-arrow-left ms-3"></i></a>
     </div>
 </nav>
 <!-- Navbar End -->

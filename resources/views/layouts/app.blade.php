@@ -27,7 +27,7 @@
     <meta name="twitter:image" content="@yield('og_image', url('assets/img/nosor-logo.png'))">
 
     <!-- Favicon -->
-    <link href="{{ asset('favicon.ico') }}" rel="icon">
+    <link href="{{ asset('assets/img/nosor-favicon.png') }}" rel="icon" type="image/png">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
