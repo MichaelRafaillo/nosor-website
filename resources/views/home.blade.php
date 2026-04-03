@@ -16,8 +16,8 @@
                                 <h1 class="display-5 text-white animated slideInDown">فَاذْهَبُوا وَتَلْمِذُوا جَمِيعَ الْأُمَمِ وَعَمِّدُوهُمْ بِاسْمِ الآبِ وَالابْنِ وَالرُّوحِ الْقُدُسِ.</h1>
                                 <p class="fs-5 text-white mb-4 pb-2">"متّى 28:19"</p>
                                 <div class="d-flex justify-content-center flex-wrap gap-2">
-                                    <a href="#" class="btn btn-primary py-md-3 px-md-5 animated slideInLeft">اقرأ المزيد</a>
-                                    <a href="#" class="btn btn-light py-md-3 px-md-5 animated slideInRight">انضم الآن</a>
+                                    <a href="{{ route('about') }}" class="btn btn-primary py-md-3 px-md-5 animated slideInLeft">اقرأ المزيد</a>
+                                    <a href="{{ route('contact.show') }}" class="btn btn-light py-md-3 px-md-5 animated slideInRight">اتصل بنا</a>
                                 </div>
                             </div>
                         </div>
@@ -34,8 +34,8 @@
                                 <h1 class="display-5 text-white animated slideInDown">فَاذْهَبُوا وَتَلْمِذُوا جَمِيعَ الْأُمَمِ وَعَمِّدُوهُمْ بِاسْمِ الآبِ وَالابْنِ وَالرُّوحِ الْقُدُسِ.</h1>
                                 <p class="fs-5 text-white mb-4 pb-2">"متّى 28:19"</p>
                                 <div class="d-flex justify-content-center flex-wrap gap-2">
-                                    <a href="#" class="btn btn-primary py-md-3 px-md-5 animated slideInLeft">اقرأ المزيد</a>
-                                    <a href="#" class="btn btn-light py-md-3 px-md-5 animated slideInRight">انضم الآن</a>
+                                    <a href="{{ route('about') }}" class="btn btn-primary py-md-3 px-md-5 animated slideInLeft">اقرأ المزيد</a>
+                                    <a href="{{ route('contact.show') }}" class="btn btn-light py-md-3 px-md-5 animated slideInRight">اتصل بنا</a>
                                 </div>
                             </div>
                         </div>
